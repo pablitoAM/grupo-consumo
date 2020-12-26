@@ -1,17 +1,20 @@
 <template>
   <Navbar />
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Hello Vue 3.0 + Vite" />
+  <Announcements />
+  <router-view />
+  <Cart />
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
 import Navbar from "./components/ui/Navbar.vue";
+import Announcements from "./components/ui/Announcements.vue";
+import Cart from "./components/cart/Cart.vue";
 export default {
   name: "App",
   components: {
-    HelloWorld,
     Navbar,
+    Announcements,
+    Cart,
   },
 };
 </script>
